@@ -1,25 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE program_guide [
-<!ELEMENT day (#PCDATA)>
+<!ELEMENT program_guide (day+)>
+<!ELEMENT day (date,time,location,event)>
 <!ELEMENT date (#PCDATA)>
 <!ELEMENT time (#PCDATA)>
 <!ELEMENT location (#PCDATA)>
-<!ELEMENT event (#PCDATA)>
-<!ELEMENT keynote_speaker (#PCDATA)>
-<!ELEMENT meal (#PCDATA|breakfast|lunch|dinner)>
-<!ELEMENT break (#PCDATA)>
+<!ELEMENT event (#PCDATA|breakfast|lunch|dinner|break|keynote_speaker)*>
+<!ATTLIST day id CDATA #REQUIRED>
 ]>
 <program_guide>
-  <day>
+  <day id="01">
     <date>November 7, 2018</date>
-    <time></time>
-    <location></location>
-    <event> </event>
-    <keynote_speaker> </keynote_speaker>
-    <meal> </meal>
-      <breakfast> </breakfast>
-      <lunch> </lunch>
-      <dinner> </dinner>
-      <break> </break>
-  </day>
+    <time>2:00-7:00 p.m.</time>
+    <location>Room 007</location>
+    <event>Registration and check-in</event>
+  </day id="01">
+  <day id="01">
+    <date>November 7, 2018</date>
+    <time>4:00-5:00 p.m.</time>
+    <location>Room 010</location>
+    <event>First time attendee session</event>
+  </day id="01">
+  <day id="01">
+    <date>November 7, 2018</date>
+    <time>6:00-6:30 p.m.</time>
+    <location>Room 010</location>
+    <event>Welcome and announcements</event>
+  </day id="01">
+  <day id="02">
+    <date>November 8, 2018</date>
+    <time>6:15-7:15 a.m.</time>
+    <location>Room 010</location>
+    <event>Yoga and networking</event>
+  </day id="02">
+  <day id="02">
+    <date>November 8, 2018</date>
+    <time>7:15-8:30 a.m.</time>
+    <location>Room 011</location>
+    <event>Breakfast</event>
+  </day id="02">
 </program_guide>
