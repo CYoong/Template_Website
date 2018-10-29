@@ -1,24 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE career_opportunities (posting+) [
-<!ELEMENT post(#PCDATA)>
+<!DOCTYPE career_opportunities [
+<!ELEMENT career_opportunities (job_post+)>
+<!ELEMENT job_post (post_date,institution,state,job_title,job_description,due_date,contact)>
 <!ELEMENT post_date (#PCDATA)>
 <!ELEMENT institution (#PCDATA)>
 <!ELEMENT state (#PCDATA)>
 <!ELEMENT job_title (#PCDATA)>
 <!ELEMENT job_description (#PCDATA)>
-<!ELEMENT due_date(#PCDATA)>
-<!ELEMENT link (#PCDATA)>
+<!ELEMENT due_date (#PCDATA)>
+<!ELEMENT contact (#PCDATA)>
 ]>
 
-
 <career_opportunities>
-  <post>
+  <job_post>
     <post_date>September 1, 2018</post_date>
     <institution>Hamline University</institution>
     <state>Minnesota</state>
     <job_title>Records Coordinator</job_title>
-    <job_description>Enter text here</job description>
+    <job_description>Enter job description here</job_description>
     <due_date>October 15, 2018</due_date>
-    <link>Enter external URL here</link>
-  </post>
+    <contact>Enter contact information here</contact>
+  </job_post>
+</career_opportunities>
+
+<career_opportunities>
+  <job_post>
+    <post_date>October 1, 2018</post_date>
+    <institution>University of Northern Iowa</institution>
+    <state>Iowa</state>
+    <job_title>Tansfer Coordinator</job_title>
+    <job_description>Enter job description here</job_description>
+    <due_date>October 26, 2018</due_date>
+    <contact>Enter contact information here</contact>
+  </job_post>
 </career_opportunities>

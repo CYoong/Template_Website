@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE member_list [
 <!ELEMENT member_list (member+)>
-<!ELEMENT member (#PCDATA)>
+<!ELEMENT member (institution, first_name,last_name,phone?,email?,office?,join_date?,years?)>
 <!ELEMENT institution (#PCDATA)>
 <!ELEMENT first_name (#PCDATA)>
 <!ELEMENT last_name (#PCDATA)>
@@ -13,13 +13,26 @@
 ]>
 <member_list>
   <member>
-    <institution>University of Minnesota</institution>
-    <first_name>Goldy<first_name>
-    <last_name>Gopher<last_name>
+    <institution>Riverland College</institution>
+    <first_name>Haley<first_name>
+    <last_name>Snow<last_name>
     <phone>999-999-9999</phone>
-    <email>goph3r@umn.edu</email>
+    <email>hsnow876@riverland.edu</email>
     <office>Admissions</office>
-    <join_date>January 01, 1940</join_date>
-    <years>78</years>
+    <join_date>June 01, 2018</join_date>
+    <years>0</years>
+  </member>
+</member_list>
+
+<member_list>
+  <member>
+    <institution>Mooreshead University</institution>
+    <first_name>Robert<first_name>
+    <last_name>Sherman<last_name>
+    <phone>000-000-0000</phone>
+    <email>rsherman11@mooreshead.edu</email>
+    <office>Registrar</office>
+    <join_date>January 22, 1999</join_date>
+    <years>19</years>
   </member>
 </member_list>
