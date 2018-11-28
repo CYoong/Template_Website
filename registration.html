@@ -16,7 +16,7 @@
       </button>
       <div class="dropdown-content">
         <a href="./registration.html">Registration</a>
-        <a href="./program-guide-and-events.html">Program Guide and Events</a>
+        <a href="./past_conferences.html">Past Conferences</a>
       </div>
     </div>
     <div class="dropdown">
@@ -58,54 +58,76 @@
       }
   }
   </script>
-<h2>Register</h2>
-<p>Submit the <a href="https://umacrao.inviteright.com/event/response/E36835DA/JUYwJTFCJUFEJTlCJTgyJTdDJTVCNyU1QyVERCVDRF8lRUQlNUVUJTdCMiU4MyUxQSUzRiUwRVolN0IlOTAlN0VzJTlBJTI3JTdEJUZBJTFGJTFC/0/0//"target="_blank">registration form</a> to attend our 2018 Annual Conference. We look forward to seeing you there!</p>
-</p>Registration closes Wednesday, October 24, 2018 at 10:00 p.m. Visit our <a href="./program-guide-and-events.html">program guide and events</a> page for conference activities and day-to-day schedules.</P>
+  <style>
+  body, html {
+      height: 100%;
+      margin: 0;
+  }
 
-<h2>Conference Dates</h2>
-<ul>
-<li>Wednesday, November 7, 2018</li>
-<li>Thursday, November 8, 2018</li>
-<li>Friday, November 9, 2018</li>
-</ul>
+  .bgimg {
+      background-image: url('/w3images/forestbridge.jpg');
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      color: #0d345b;
+      font-family: "Helvetica", sans-serif;
+  }
 
-<h2>Location</h2>
-The Hotel at Kirkwood — Cedar Rapids, Iowa
+  .topleft {
+      position: absolute;
+      top: 0;
+      left: 16px;
+  }
 
-<h2>Pricing</h2>
-<p>Please note, only institutions with paid memberships for 2018-2019 will be eligible for the conference member rate. Visit our membership page to <a href="./join-or-renew.html">join or renew</a>.</P>
-<table>
-  <tr>
-    <th>Attendance</th>
-    <th>Cost</th>
-  </tr>
-  <tr>
-    <td>Full Conference (UMACRAO institution member)</td>
-    <td>$325.00 - Includes meals and breaks</td>
-  </tr>
-  <tr>
-    <td>Full Conference (Non-member)</td>
-    <td>$400.00 - Includes meals and breaks</td>
-  </tr>
-  <tr>
-    <td>One Day - Thursday, November 8, 2018</td>
-    <td>$150.00 - Includes breakfast, lunch, and breaks; does not include Thursday banquet</td>
-  </tr>
-  <tr>
-    <td>Banquet - Thursday, November 8, 2018</td>
-    <td>$60.00 - for guests or partial conference participants</td>
-  </tr>
-</table>
+  </style>
+  <body>
 
-<h2>Lodging</h2>
-<ul>
-  <p><li>Staying at the <a href="https://thehotelatkirkwood.com"target="_blank">Hotel at Kirkwood </a>offers ease of access to the conference and “an extensive, completely original art collection of hand-blown glass.”</li></p>
-<p><li>Use the group code UMACRAO to get a special conference rate of $114 per night when you book your room. </li></p>
-<p><li>For questions or concerns, please call (319) 848-8700.</li></p>
-</ul>
+  <div class="bgimg">
+    <div class="topleft">
+      <p></p>
+    </div>
+    <div class="middle">
+      <h2>Conference Registration</h2>
+      <h2>September 2019</h2>
+      <hr>
+      <p id="demo" style="font-size:20px"></p>
+    </div>
+    <div class="bottomleft">
+      <p></p>
+    </div>
+  </div>
 
-<h2>Conference cancellations</h2>
-Email any conference cancellation requests to umacraoregional@gmail.com by Friday, October 19, 2018. No refunds will be issued after this date.
-</p>
+  <script>
+  // Set the date we're counting down to
+  var countDownDate = new Date("Sep 5, 2019 15:37:25").getTime();
+
+  // Update the count down every 1 second
+  var countdownfunction = setInterval(function() {
+
+      // Get todays date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now an the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Output the result in an element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+
+      // If the count down is over, write some text
+      if (distance < 0) {
+          clearInterval(countdownfunction);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+  }, 1000);
+  </script>
+  </body>
 </body>
 </html>
